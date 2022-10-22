@@ -1,0 +1,18 @@
+.container{
+    width: 20cm;
+    height: 10cm;
+    background-color: lightgrey;
+    margin-top: 1cm;
+}
+h3{
+    text-align: center;
+}
+
+label{
+    text-align: left;
+    margin-left: 1ch;
+}
+
+.alto{
+    height: 0.5cm;
+}
