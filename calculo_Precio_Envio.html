@@ -32,33 +32,41 @@
     <!--comienzo del codigo para el formulario-->
     <div class="container mt-5">
         <div class="row mt-5" style="background-color: #A6ACAF;">
-            <form class="row g-3 mt-3 my-3">
+            <form class="row g-3 mt-3 my-3 nedds-validation" novalidate>
                 <p class="h3 text-center">Calcular precio de envio</p>
                 <div class="mb-3 col-6">
-                    <label class="form-label">Agencia de Salida</label>
-                    <select class="form-select" aria-label="Default select example">
+                    <label class="form-label">Agencia de Salida <span style="color: #A93226;" >*</span> </label>
+                    <select class="form-select" aria-label="Default select example" required>
                         <option selected>Seleccione la Agencia...</option>
                         <option value="1">Agencia01</option>
                         <option value="2">Agencia02</option>
                         <option value="3">Agencia03</option>
                       </select>
+                      <div class="valid-feedback">Ok</div>
+                      <div class="invalid-feedback">Campo Obligatorio</div>
                 </div>
                 <div class="mb-3 col-6">
-                    <label class="form-label">Agencia de Destino</label>
-                    <select class="form-select" aria-label="Default select example">
+                    <label class="form-label">Agencia de Destino <span style="color: #A93226;" >*</span> </label>
+                    <select class="form-select" aria-label="Default select example" required>
                         <option selected>Seleccione la Agencia...</option>
                         <option value="1">Agencia01</option>
                         <option value="2">Agencia02</option>
                         <option value="3">Agencia03</option>
-                      </select>
+                    </select>
+                    <div class="valid-feedback">Ok</div>
+                    <div class="invalid-feedback">Campo Obligatorio</div>
                 </div>
                 <div class="mb-3 col-6">
-                    <label class="form-label">Peso en Kg</label>
-                    <input type="text" class="form-control" id="peso">
+                    <label class="form-label">Peso en Kg <span style="color: #A93226;" >*</span> </label>
+                    <input type="text" class="form-control" id="peso" placeholder="" value="" required>
+                    <div class="valid-feedback">Ok</div>
+                    <div class="invalid-feedback">Campo Obligatorio</div>
                 </div>
                 <div class="mb-3 col-6">
-                    <label class="form-label">Dimensiones</label>
-                    <input type="text" class="form-control" id="dimensiones">
+                    <label class="form-label">Dimensiones <span style="color: #A93226;" >*</span> </label>
+                    <input type="text" class="form-control" id="dimensiones" placeholder="" value="" required>
+                    <div class="valid-feedback">Ok</div>
+                    <div class="invalid-feedback">Campo Obligatorio</div>
                 </div>
                 <div class="mb-3 col-6">
                     <p class="h6">Precio Calculado</p>
@@ -68,8 +76,8 @@
                     </div>
                 </div>
                 <div class="col align-self-end text-center">
-                    <button type="button" class="btn btn-secondary" style="background-color: #34495E; border-color: #34495E; margin-right: 10px; border-radius: 5px;--bs-btn-padding-y: 4px; --bs-btn-padding-x: 50px; --bs-btn-font-size: 16px;" >Calcular</button>
-                    <button type="button" class="btn btn-secondary" style="background-color:  #A93226; border-color: #A6ACAF; margin-right: 10px; border-radius: 5px; --bs-btn-padding-y: 4px; --bs-btn-padding-x: 50px; --bs-btn-font-size: 16px;">Regresar</button>
+                    <button type="submit" class="btn btn-secondary" style="background-color: #34495E; border-color: #34495E; margin-right: 10px; border-radius: 5px;--bs-btn-padding-y: 4px; --bs-btn-padding-x: 50px; --bs-btn-font-size: 16px;" >Calcular</button>
+                    <button type="submit" class="btn btn-secondary" style="background-color:  #A93226; border-color: #A6ACAF; margin-right: 10px; border-radius: 5px; --bs-btn-padding-y: 4px; --bs-btn-padding-x: 50px; --bs-btn-font-size: 16px;">Regresar</button>
                 </div>                                
             </form>
 
